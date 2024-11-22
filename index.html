@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,146 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        body {background-color: rgb(186, 97, 97);
-            color: white;
-            font-family: 'Poppins',sans-serif;
-        }
-
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 95px;
-            background-color:rgb(169, 81, 81) ;
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li{
-            list-style: none;
-            margin: 0 23px;
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
-        nav ul li a:hover{
-            color: rgb(233, 127, 127);
-            font-size: 1.02rem;
-        }
-        .left{
-            font-size: 1.5rem;
-        }
-        .firstSection{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 110px 0;
-        }
-        .firstSection > div{
-            width: 30%; 
-        }
-        .leftSection{
-            font-size: 2.5rem;
-        }
-
-        .rightSection img{
-            width: 70%;
-            margin: 4% 0;
-            mix-blend-mode:;
-            filter: contrast();
-        }
-        .grey{
-            color: rgb(92, 152, 92);
-        }
-        #element{
-            color:  rgb(64, 232, 64);
-            
-        }
-        .secondSection{
-            max-width: 80vw;
-            margin:auto ;
-            height: 80vh;
-        }
-        .secondSection h1{
-            font-size: 1.6rem;
-        }
-        .text-blue{
-            color: blueviolet;
-        }
-        .secondSection .box{
-            background-color: white;
-            width: 77vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-        .secondSection .vertical{
-            height: 120px;
-            width: 1.5px;
-            background-color: white;
-            margin:0 170px ;
-        }
-
-        .image-top{
-            width: 30px;
-            position: relative;
-            top: -31px;
-            left: -13px;
-        }
-
-        .vertical-title{
-            position: relative;
-            top: 90px;
-            width: 150px;
-        }
-        .vertical-desc{
-            position: relative;
-            top: 90px;
-            color: rgb(64, 51, 114);
-            width: 300px; 
-            font: 8px;
-        }
-        
-        .footer{
-            background-color: brown;
-            height: 100px;
-        }
-        .footer{
-            display: flex;
-            padding: 23px 122px;
-            justify-content:space-evenly ;
-        }
-        .footer ul{
-            list-style-type: none;
-        }
-        .fotter > div{
-            width: 253px;
-        }
-        footer .footer-rights{
-            text-align: center;
-            background-color: rgb(31, 27, 29);
-            padding: 20px;
-        }
-        .leftSection .btn{
-            font-size: 20px;
-            background-color:  rgb(133, 79, 79);
-            color: white;
-            border: 2px solid white;
-            padding: 8px;
-            cursor: pointer;  
-            border-radius: 8px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
     <header>
         <nav>
@@ -158,6 +23,7 @@
                     <li><a href="/">Services</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Contact Me</a></li>
+                    <i class="ri-menu-2-line"></i>
                 </ul>
             </div>
         </nav>
@@ -165,45 +31,80 @@
 
     <main>
         <section class="firstSection">
-            <div class="leftSection">Hi, My name is <span class="grey">Amarjeet</span> 
-                <div>and I am a  </div>
+            <div class="leftSection">
+                <p>Hi, My name is <span class="grey">Amarjeet</span></p>
+                <p>and I am a </p>
                 <span id="element"></span>
                 <div class="buttons">
                     <button class="btn">Download Resume </button>
                     <button class="btn">Visit Github</button>
                 </div>
             </div>
-            
-            <div class="rightSection">
-                <img src="/bg-removebg-preview.png"  alt="" >
-            </div>
+
+
+            <img src="/resume/bi.png" alt="">
+
         </section>
-        <hr>
+        <div id="line"></div>
         <section class="secondSection">
             <span class="text-blue">What I have done so far</span>
             <h1>Work Experience</h1>
 
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="/developer.png" alt="">
-                <div class="vertical-title">
-                    I am a Fresher
-                </div>
-                <div class="vertical-desc">
-                    "I'm Amarjeet, I am under graduate in BCA(AIML). Throughout my academic journey, I've developed a strong foundation in Web Development, and I am enthusiastic about translating my theoretical knowledge into real-world applications.
-                </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="/developer.png" alt="">
-                <div class="vertical-title">
-                    I am a Fresher
-                </div>
-                <div class="vertical-desc">
-                    "I'm Amarjeet, I am under graduate in BCA(AIML). Throughout my academic journey, I've developed a strong foundation in Web Development, and I am enthusiastic about translating my theoretical knowledge into real-world applications.
-                </div>
-                 
-            </div>
+            <div id="box1">
+                <p class="boxA">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta, autem ex
+                    asperiores sapiente maxime! Nulla illum explicabo atque rem aspernatur distinctio fugiat, temporibus
+                    necessitatibus non, cum cupiditate reiciendis at?
+                </p>
 
+                <p class="boxB"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt maxime iure?
+                    Totam rem vitae dicta earum consectetur corporis eius excepturi atque, illum nam. Illo voluptate sit
+                    nam quidem molestias.
+                </p>
+
+            </div>
+            <div id="box2">
+
+                <p class="boxC"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae tempore expedita
+                    debitis voluptatum nihil doloremque doloribus illum eos dignissimos, culpa nobis? Ratione iste odio,
+                    consectetur doloribus nulla est ducimus corrupti.
+                </p>
+                <p class="boxD">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero eos, sed esse velit animi quis
+                    consequatur blanditiis suscipit ad ut ex aliquam unde laborum ab iste? Autem, fugit laboriosam!
+                </p>
+
+            </div>
+            <div id="box3">
+                <img src="/resume/favpng_web-development-web-application-development-software-development.png" alt="">
+            </div>
+                <!-- <div class="box4">
+                    <p>Web Development
+                        Web development is the process of creating websites and web applications. It involves a variety of tasks, ranging from building a simple static page to developing complex dynamic applications. Web development can be broadly divided into two main areas: front-end development and back-end development. Additionally, there's full-stack development, which involves both front-end and back-end development.
+                        
+                        1. Front-End Development
+                        Front-end development is responsible for the user interface (UI) and user experience (UX) of a website or web application. It's everything that the user interacts with directly on their browser, including the layout, design, and content display. Front-end development involves the use of the following technologies:
+                        
+                        Key Technologies:
+                        HTML (HyperText Markup Language): The basic structure of web pages. HTML defines the elements like headings, paragraphs, images, links, and forms.
+                        
+                        CSS (Cascading Style Sheets): Controls the layout and style of a web page. CSS is responsible for colors, fonts, spacing, positioning, and responsiveness (how the website looks on different devices).
+                        
+                        JavaScript: A programming language that adds interactivity to a webpage. For example, JavaScript can be used to create animations, handle form submissions, and dynamically load content.
+                        
+                        Front-End Frameworks and Libraries:
+                        React: A JavaScript library developed by Facebook for building user interfaces. It's especially popular for building single-page applications (SPAs) and offers a component-based approach.
+                        
+                        Angular: A TypeScript-based open-source framework for building dynamic web applications. It provides a robust set of features like two-way data binding, dependency injection, and routing.
+                        
+                        Vue.js: A progressive JavaScript framework used for building user interfaces. It's known for its simplicity and flexibility, often used for building modern web applications.
+                        
+                        Bootstrap: A CSS framework that provides pre-designed components (like buttons, navigation bars, and forms) to make it easier to create responsive and mobile-first web pages.
+                        
+                        
+                         </p>
+                </div> -->
+           
+           
         </section>
     </main>
 
@@ -237,20 +138,21 @@
                 </ul>
             </div>
         </div>
-        <footer class="footer-rights">COPYRIGHT	&#169; amarjeet.com | All rights reserved</footer>
+        <footer class="footer-rights">COPYRIGHT &#169; amarjeet.com | All rights reserved</footer>
     </footer>
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Load library from the CDN -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Web Designer'],
-      typeSpeed: 50,
-    });
-  </script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>
